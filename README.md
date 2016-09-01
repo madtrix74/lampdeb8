@@ -10,7 +10,7 @@ Pour l'installation
   
 Important commands
 
-To start/stop/restart and to see status of Apache 2, enter
+#To start/stop/restart and to see status of Apache 2, enter
 
   systemctl start apache2
   
@@ -20,7 +20,7 @@ To start/stop/restart and to see status of Apache 2, enter
   
   systemctl status apache2
 
-To start/stop/restart and to see status of MySQL server, enter
+#To start/stop/restart and to see status of MySQL server, enter
 
   systemctl start mysql
   
@@ -30,7 +30,7 @@ To start/stop/restart and to see status of MySQL server, enter
   
   systemctl status mysql
 
-Verify that port # 80 open
+#Verify that port # 80 open
 
   netstat -tulpn | grep :80
   
@@ -42,7 +42,7 @@ Verify that port # 80 open
   
   iptable -L -n -v | less
 
-Important log files
+#Important log files
 
 tail -f /var/log/apache2/access.log
 
