@@ -10,21 +10,21 @@ Pour l'installation
   
 Important commands
 
-To start/stop/restart and to see status of Apache 2, enter:
+To start/stop/restart and to see status of Apache 2, enter
 
   systemctl start apache2
   systemctl stop apache2
   systemctl restart apache2
   systemctl status apache2
 
-To start/stop/restart and to see status of MySQL server, enter:
+To start/stop/restart and to see status of MySQL server, enter
 
   systemctl start mysql
   systemctl stop mysql
   systemctl restart mysql
   systemctl status mysql
 
-Verify that port # 80 open:
+Verify that port # 80 open
 
   netstat -tulpn | grep :80
   ss -t -a
