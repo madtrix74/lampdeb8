@@ -18,6 +18,7 @@ clear
 	echo -e "$VERT" "  *                   ""$ROUGE""MadTrix Script Security et TWEAK""$NORMAL""$VERT""                *  " "$NORMAL"
 	echo -e "$VERT" "  *********************************************************************  " "$NORMAL"
 }
+
 #Utilistaeur
 USER=madtrix
 AUTOPWDU=
@@ -35,6 +36,7 @@ SSH_PORT=""
 PORTM=""
 #password Mysql et phpmyadmin
 MYSQL_PASS=
+
 
 # variables info system
 IPV4=`command ifconfig eth0 | grep "inet ad" | cut -f2 -d: | awk '{print $1}'`
