@@ -1,5 +1,5 @@
 # lampdeb8
-scripte shell installation automatique d'un serveur LAMP
+scripte shell installation automatique d'un serveur LAMP pour Debian 8
 
 Pour l'installation 
   1. git clone https://github.com/madtrix74/lampdeb8.git lampdeb8
