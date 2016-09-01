@@ -1,5 +1,5 @@
 #!/bin/bash
-~/lampdeb8/var.sh
+/root/lampdeb8/var.sh
 		if [[ $EUID -ne 0 ]]; then
 				echo -e "$ROUGE""Ce script doit ce démmarer en root""$NORMAL" 1>&2
 			exit 1
@@ -121,8 +121,8 @@ logo
 			echo "${USER}:${AUTOPWDU}" | chpasswd
 			mkdir /home/${USER}/public_html
 			mkdir /home/${USER}/logs
-			cp -r theme /home/${USER}/public_html/
-			cp htaccess.txt /home/${USER}/public_html/.htaccess
+			cp -r /root/lampdeb8/theme /home/${USER}/public_html/
+			cp /root/lampdeb8/htaccess.txt /home/${USER}/public_html/.htaccess
 			rename /home/${USER}/public_html/theme/htaccess.txt /home/${USER}/public_html/theme/.htaccess
 			echo ${userProfile} >> /${HOME_BASE}/${USER}/.bashrc
 			echo 'echo "Acces SSH: " `who` `date` | mail -s "Acces SSH"' ${mailroot} >> /${HOME_BASE}/${USER}/.bashrc
@@ -207,4 +207,4 @@ port = ${SSH_PORT}" >> '/etc/fail2ban/jail.local'
 		chown ${USER}:${USER} /home/${USER}/.infosecu
 		sleep 3
 cd
-sh ~/lampdeb8/lamp.sh
+sh /root/lampdeb8/lamp.sh
