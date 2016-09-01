@@ -20,21 +20,21 @@ clear
 }
 #Utilistaeur
 USER=madtrix
-AUTOPWDU=madtrix03111974
+AUTOPWDU=
 #password root
-AUTOPWDR=root03111974
+AUTOPWDR=
 #mail root
-mailroot=madtrix74@gmail.com
+mailroot=
 #variables sur le HostNam 
-HOSTNAME=lordmad.com
+HOSTNAME=
 #variables sur le host www.host.be
-HOSTNAME2=srv.lordmad.com
+HOSTNAME2=
 #SSH PORT
-SSH_PORT="16022"
+SSH_PORT=""
 #port monit
-PORTM="8888"
+PORTM=""
 #password Mysql et phpmyadmin
-MYSQL_PASS=sql03111974
+MYSQL_PASS=
 
 # variables info system
 IPV4=`command ifconfig eth0 | grep "inet ad" | cut -f2 -d: | awk '{print $1}'`
