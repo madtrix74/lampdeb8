@@ -15,10 +15,6 @@ echo "# dépôt dotdeb
 deb http://packages.dotdeb.org jessie  all
 deb-src http://packages.dotdeb.org jessie  all" >> /etc/apt/sources.list.d/dotdeb.list
 
-echo "# dépôt dotdeb php 5.6
-deb http://packages.dotdeb.org jessie -php56 all
-deb-src http://packages.dotdeb.org jessie -php56 all" >> /etc/apt/sources.list.d/dotdeb-php56.list
-
 echo "
 deb http://ftp.us.debian.org/debian/ jessie main contrib non-free
 deb-src http://ftp.us.debian.org/debian/ jessie main contrib non-free

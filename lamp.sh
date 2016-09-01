@@ -1,5 +1,5 @@
 #!/bin/bash
-. /root/lampdeb8/lampdeb8/var.sh
+. /root/lampdeb8/var.sh
 logo
 	echo -e "$ROUGE" "  *" "$NORMAL" "$VERT" "Installation de apache2 php5 plus bibliotec." "$NORMAL"
 	sleep 3
