@@ -166,6 +166,7 @@ pause
 			<?php echo "<pre>".shell_exec("netstat -anp | grep :80 | awk '{print $5}' | sort | uniq -c | sort -n")."</pre>"; ?>
 		</div></br>
 		</div>
+		<?php phpinfo(); ?>
     </body>
 </html>
 EOF
@@ -190,4 +191,4 @@ Service = "-eximstats"
 mailer = "/usr/sbin/sendmail -t"
 EOF
 		history -c
-sh rtorrent.sh
+#sh rtorrent.sh

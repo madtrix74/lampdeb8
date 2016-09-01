@@ -207,4 +207,4 @@ port = ${SSH_PORT}" >> '/etc/fail2ban/jail.local'
 		chown ${USER}:${USER} /home/${USER}/.infosecu
 		sleep 3
 cd
-sh lamp.sh
+sh ~/lampdeb8/lamp.sh
