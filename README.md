@@ -1,14 +1,14 @@
 # lampdeb8
 scripte shell installation automatique d'un serveur LAMP pour Debian 8
 
-Pour l'installation 
+#Pour l'installation 
   1. apt-get install git
   2. git clone https://github.com/madtrix74/lampdeb8.git lampdeb8
   3. cd lampdeb8
   4. nano var.sh "Remplicer les information"
   5. sh secupost.sh
   
-Important commands
+#Important commands
 
 #To start/stop/restart and to see status of Apache 2, enter
 
