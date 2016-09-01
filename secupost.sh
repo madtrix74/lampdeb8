@@ -1,5 +1,5 @@
 #!/bin/bash
-. ./var.sh
+~/lampdeb8/var.sh
 		if [[ $EUID -ne 0 ]]; then
 				echo -e "$ROUGE""Ce script doit ce démmarer en root""$NORMAL" 1>&2
 			exit 1
