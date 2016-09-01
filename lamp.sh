@@ -33,7 +33,7 @@ logo
 		echo phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2 | debconf-set-selections
 		apt-get install -q -y phpmyadmin
 		service mysql restart
-pause		
+		
 
 		sed -i 's/ServerTokens OS/ServerTokens Prod/' /etc/apache2/conf-enabled/security.conf
 		sed -i 's/ServerSignature On/ServerSignature Off/' /etc/apache2/conf-enabled/security.conf
@@ -62,7 +62,7 @@ pause
     #</IfModule>
 </IfModule>
 EOF
-pause
+
 #on config userdir.conf
 	sed -i 's/AllowOverride FileInfo AuthConfig Limit Indexes/AllowOverride All/' /etc/apache2/mods-available/userdir.conf
 	sed -i '/Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec/d' /etc/apache2/mods-available/userdir.conf
@@ -90,7 +90,7 @@ EOF
 
 		service apache2 restart
 		service proftpd restart
-pause
+
 				mkdir /var/www/html/admin
 		cat << EOF > /var/www/html/admin/madinfo.php
 <html>
